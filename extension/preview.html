@@ -1,0 +1,6 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>长截图预览 · EasyCapture</title><link rel="stylesheet" href="ui.css"></head><body class="preview">
+<header class="toolbar"><div class="brand"><img src="icons/48.png" alt=""><div><h1 id="title">长截图预览</h1><p id="meta">正在读取本机截图…</p></div></div><div class="actions"><button id="fit" disabled>适应宽度</button><label class="zoom-label"><span class="sr-only">预览缩放</span><input type="range" id="zoom" min="10" max="200" value="100" disabled><output id="zoom-value">100%</output></label><button id="download" class="primary" disabled>下载 PNG</button><button id="delete" class="danger" disabled>删除</button></div></header>
+<div class="notice" id="notice" hidden></div><div class="error preview-error" id="error" role="alert" hidden></div>
+<main class="viewer" id="viewer"><div class="empty" id="loading">正在加载预览…</div><div class="image-stack" id="images"></div></main>
+<footer class="preview-footer"><span>PNG 原图下载 · 预览缩放不影响清晰度</span><span>图片仅保存在本机。新截图时清理超过 24 小时或最近 10 次以外的记录。</span></footer>
+<script src="shared/db.js"></script><script src="shared/zip.js"></script><script src="preview.js"></script></body></html>

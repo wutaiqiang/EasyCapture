@@ -1,0 +1,4 @@
+{
+  "extensionName": {"message": "EasyCapture"},
+  "extensionDescription": {"message": "点击一个滚动区域，自动滚动并拼接长截图，在本机预览、下载 PNG。支持网页、表格和侧栏。"}
+}

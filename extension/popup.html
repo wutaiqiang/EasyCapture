@@ -1,0 +1,10 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>区域长截图</title><link rel="stylesheet" href="ui.css"></head><body class="popup">
+<header class="brand"><img src="icons/48.png" alt=""><div><h1>EasyCapture</h1><p>EASYCAPTURE · LOCAL</p></div></header>
+<p class="intro">点击滚动区域，自动拼成长图。</p>
+<ol class="steps"><li>点击下方按钮，选择高亮区域</li><li>保持标签页打开，等待自动滚动</li><li>在新标签中预览、下载 PNG</li></ol>
+<label class="check"><input type="checkbox" id="sticky" checked><span>避免固定栏、表头重复出现</span></label>
+<label class="setting"><span>滚动等待</span><select id="speed"><option value="450">标准 · 适合多数网页</option><option value="1000">慢速 · 等待动态内容加载</option></select></label>
+<button id="start" class="primary">选择滚动区域</button><p class="error" id="error" role="alert" hidden></p><p id="status" class="muted" aria-live="polite"></p>
+<section id="recent-wrap" hidden><h2>最近的截图</h2><div id="recent"></div></section>
+<footer>全程本机处理，无需账号。<br>快捷键 Alt + Shift + S · Esc 取消</footer>
+<script src="shared/db.js"></script><script src="popup.js"></script></body></html>
